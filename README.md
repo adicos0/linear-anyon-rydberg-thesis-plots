@@ -1,54 +1,66 @@
-# Thesis plot code collection
+# Linear Anyon Model with Rydberg Atoms
 
-This folder collects the original code files I located for the plots in **Masters_Thesis_MQST_Final__Linear_Anyon_Model_with_Rydberg_Atoms__.pdf** (62 pages; SHA-256 `5753cc5932becab0303a5c3e2fd54eb7b5b2905580211479e605e25d0497b27e`). `SOURCE_MANIFEST.csv` records each original location and SHA-256 checksum. All originals were copied, not moved or edited. The `reference_figures/` folder holds the graphics from the thesis LaTeX project, so you can identify a script's output by eye.
+**Figures, plotting code, and saved data from the master’s thesis by Aditya Banerjee**  
+Master in Quantum Science and Technology · Universitat de Barcelona · 2026
 
-## What each figure uses
+This repository is a companion to the thesis *Linear Anyon Model with Rydberg Atoms*. It brings together the code located for its numerical plots, the saved data needed to replot selected results, and the graphics used in the thesis. Start with the [figure guide](#find-a-figure) if you are looking for a particular plot.
 
-| Thesis figure | Graphic in `reference_figures/` | Located code | Evidence and qualification |
-|---|---|---|---|
-| 1 | `rydberg_active_bond_A/B/C.pdf` | `scripts/make_active_bond_clean.py` | The script extracts/crops panels from `rydberg_active_bond.pdf`. The original drawing authoring source was not located. |
-| 2 | `heff2_spectrum_vs_N.png` | `scripts/heff2_E_vs_N_thesis.py` | The script explicitly writes this filename. `heff2_E_vs_N.py` creates its cached spectrum. |
-| 3 | `floquet_population_dynamics.png` | `scripts/heff2_states.py` | The script writes `heff2_states.png`; the existing rendered file has **identical RGB pixels** to the thesis graphic, 2400 × 2025 pixels. |
-| 4–5 | `heff2_spacetime.png`, `heff2_spacetime_phi.png` | `scripts/heff2_spacetime.py` | The AC2 revision is the version whose figure graphics were packaged. Its code writes both filenames. |
-| 6 | `amplitudes_vs_muU.png` | `scripts/amplitudes_vs_muU_thesis.py` | The script explicitly writes this filename in `figures/`. |
-| 7 | `mu_vs_A_over_U.png` | `scripts/mu_vs_A_over_U.py` | The script writes this filename; the thesis source copies it into `figures/`. |
-| 8–9 | seven `anyonHubbardGap_N10_*.png` files | `scripts/replotGapsMulti.py` | The renderer names all seven graphics. It reads the cached grid created by `sweepGapsMulti.py` and `doApplyHam.py`. Use `symbol='phi'` to match the thesis axis label. |
-| 10–17 | `diamond_*`, `levels_*`, `photon_*` | **Unverified / needs check** | These are schematics rather than numerical plots. I found their image files but no code or editable source that generated them. |
+## The question behind the work
 
-## Inputs and software
+The one-dimensional anyon-Hubbard model can be expressed in terms of bosons whose tunnelling acquires a phase that depends on how many particles occupy a site. This **occupation-dependent phase** represents the model’s statistical angle. The thesis asks whether laser-driven Rydberg atoms can produce that tunnelling rule.
 
-- `data/heff2_E_vs_N_L10.npz`: spectrum cache for Figure 2.
-- `data/anyonHubbardGapsMulti_N10.npz`: energy grid for Figures 8–9.
-- Python packages used across these scripts: NumPy, SciPy, Matplotlib; `make_active_bond_clean.py` additionally uses PyMuPDF (`fitz`). These are imports seen in the located code; no original environment lockfile was found.
+The proposed setup encodes the local occupations |0⟩, |1⟩, and |2⟩ in atomic internal levels. Raman lasers and Rydberg interactions then produce effective tunnelling through off-resonant, second-order processes. The work calculates the resulting bond Hamiltonian, studies its spectrum and dynamics, and compares its tunnelling amplitudes and phases with those required by the anyon-Hubbard model.
 
-## Replot using the saved spectra
+**Result of the thesis, within the schemes analysed:** Static Raman driving reaches the pseudofermionic point, but its statistical angle is restricted to 0 or π. Adding a *single-frequency* periodic drive can change the tunnelling magnitudes, yet it does not remove that phase restriction. Thus these schemes do not realize an arbitrary statistical angle.
 
-From this folder, using a Python environment with the packages above:
+**Proposed direction, not a result demonstrated here:** A drive with several independently phased tones could address different occupation-dependent processes separately. The thesis identifies this as a route to investigate; this repository does not contain a completed multi-tone realization or experimental data.
+
+![Figure 2: effective spectrum resolved by particle number](reference_figures/heff2_spectrum_vs_N.png)
+
+*Figure 2 illustrates one part of the calculation: the effective spectrum resolved by particle number. Its plotting script and saved spectrum are included below.*
+
+## Find a figure
+
+| Thesis figure | What it shows | Where to look |
+|---|---|---|
+| 1 | The active Rydberg bond and its panels | [Panel extraction script](scripts/make_active_bond_clean.py) · [reference PDF](reference_figures/rydberg_active_bond.pdf) |
+| 2 | Effective spectrum versus particle number | [Plotting script](scripts/heff2_E_vs_N_thesis.py) · [spectrum data](data/heff2_E_vs_N_L10.npz) |
+| 3 | Population dynamics of the driven bond | [Script](scripts/heff2_states.py) · [thesis graphic](reference_figures/floquet_population_dynamics.png) |
+| 4–5 | Spacetime dynamics when the bond model is extended to a chain | [Script](scripts/heff2_spacetime.py) · [graphic 4](reference_figures/heff2_spacetime.png) · [graphic 5](reference_figures/heff2_spacetime_phi.png) |
+| 6–7 | Effective amplitudes, chemical potential, and interaction | [Amplitude script](scripts/amplitudes_vs_muU_thesis.py) · [parameter script](scripts/mu_vs_A_over_U.py) |
+| 8–9 | Energy gaps of the **target anyon-Hubbard model** across its parameter grid | [Plotting script](scripts/replotGapsMulti.py) · [saved grid](data/anyonHubbardGapsMulti_N10.npz) |
+| 10–17 | Transition and level schematics | Graphics are in [reference_figures/](reference_figures/); their generator or editable source was not located. |
+
+The Figures 8–9 gap maps describe the target model. They should not be read as evidence that the Rydberg scheme realizes arbitrary statistical angles.
+
+## What is in each folder
+
+- [`scripts/`](scripts/) contains 10 original Python files. Some draw figures directly; others calculate the spectra used by a plotting script. In particular, [`heff2_E_vs_N.py`](scripts/heff2_E_vs_N.py) produces the Figure 2 spectrum, while [`sweepGapsMulti.py`](scripts/sweepGapsMulti.py) and [`doApplyHam.py`](scripts/doApplyHam.py) produce the data behind Figures 8–9.
+- [`data/`](data/) contains two saved `.npz` files, allowing those figures to be replotted without repeating the longer numerical calculations.
+- [`reference_figures/`](reference_figures/) contains the graphics from the thesis project, including schematics for which no generator was found.
+- [`SOURCE_MANIFEST.csv`](SOURCE_MANIFEST.csv) records each file’s original location, role, size, and SHA-256 checksum. Its original paths refer to the computer on which the files were found; they are provenance records, not paths a new user needs to recreate.
+
+## Replot selected figures
+
+The scripts use NumPy, SciPy, and Matplotlib. The Figure 1 panel extraction script also imports PyMuPDF (`fitz`). No original dependency lockfile was found, so exact rendering can vary with package versions.
+
+From the repository root, these commands replot Figure 2 using the saved spectrum and Figures 8–9 using the saved energy grid:
 
 ```bash
-cp data/heff2_E_vs_N_L10.npz .
 mkdir -p figures
+cp data/heff2_E_vs_N_L10.npz .
 python scripts/heff2_E_vs_N_thesis.py
-python scripts/heff2_states.py
-python scripts/amplitudes_vs_muU_thesis.py
-python scripts/mu_vs_A_over_U.py
 python -c "import sys; sys.path.insert(0, 'scripts'); from replotGapsMulti import plot_all; plot_all(npzfile='data/anyonHubbardGapsMulti_N10.npz', symbol='phi', outdir='figures')"
 ```
 
-To regenerate Figures 4–5, run `python scripts/heff2_spacetime.py` separately. This script also performs a large matrix based gauge check, so allow substantial memory and time. The scripts create new files in this folder (`figures/`, and for some scripts the folder root). The `reference_figures/` files preserve the original graphics. Figure 2's full-spectrum generator and Figures 8–9's Lanczos sweep are provided for provenance; rerunning them can take substantial time and memory. The numerical content and model assumptions are those of the original scripts, which I have not independently validated against the underlying physics.
+The commands write new images to `figures/`; the archived images remain in `reference_figures/`. Other scripts retain their original relative output paths, so check the script before running it. Recomputing the Figure 2 spectrum or the Figures 8–9 energy grid can take substantial time and memory. The Figures 4–5 script also performs a large matrix calculation.
 
-## Verification
+## What was checked
 
-- Every copied Python file passed Python syntax parsing.
-- I extracted the raster plots from the **supplied PDF** and compared their RGB pixels to the archived reference images. All 13 image files used across Figures 2–9 matched exactly. This establishes that these graphics are the ones in the supplied PDF.
-- Figure 2 regenerated from the copied script and saved spectrum with identical RGB pixels to the thesis project graphic.
-- All seven panels used by Figures 8–9 regenerated from the saved energy grid with identical RGB pixels when the phase symbol was set to `phi`.
-- The already existing `heff2_states.png` has identical RGB pixels to Figure 3's `floquet_population_dynamics.png`; PNG file bytes differ because of encoding. A fresh render in the current software environment was not pixel identical, so use the archived reference graphic for exact appearance.
-- The existing output of `mu_vs_A_over_U.py` is byte identical to the thesis project copy used for Figure 7.
-- Figures 4–6 were matched through their original output names, source locations, and project graphics, with the graphics also matched to the PDF as above. I did not complete new renders of those computation and rendering intensive scripts.
+- All copied Python files passed syntax parsing.
+- The 13 raster graphics used across Figures 2–9 have identical RGB pixels to the images extracted from the supplied 62-page thesis PDF.
+- Figure 2 and all seven gap panels in Figures 8–9 were regenerated from the included saved data with identical RGB pixels to the thesis project graphics.
+- The existing output of the Figure 3 script has identical RGB pixels to the thesis graphic, although a fresh render with the current software environment was not pixel identical.
+- The Figure 1 script extracts panels from an existing PDF; the source that originally drew that PDF was not located. Likewise, the generator or editable source for the Figures 10–17 schematics was not located.
 
-The render and source matches establish file provenance. They do not validate the physical model or numerical assumptions in the code.
-
-## Search scope
-
-I searched the accessible user directory, focusing on Documents, Downloads, Desktop, the thesis project and its copied Overleaf/revision folders. I matched image names to the LaTeX source and code output paths, compared duplicate copies, and checked Figure 3 by an exact RGB pixel comparison. A missing schematic source means only that it was not located in this search; it may exist on an external drive or in an application project that is not present here.
+These checks establish which files produced or correspond to the thesis figures. They do not independently validate the physical model or its numerical assumptions. The scripts and reference graphics were copied without altering their contents; the [source manifest](SOURCE_MANIFEST.csv) preserves their checksums.
