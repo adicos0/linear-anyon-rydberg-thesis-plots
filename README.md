@@ -17,8 +17,6 @@ The proposed setup encodes the local occupations |0⟩, |1⟩, and |2⟩ in atom
 
 **Proposed direction, not a result demonstrated here:** A drive with several independently phased tones could address different occupation-dependent processes separately. The thesis identifies this as a route to investigate; this repository does not contain a completed multi-tone realization or experimental data.
 
-![Figure 2: effective spectrum resolved by particle number](reference_figures/heff2_spectrum_vs_N.png)
-
 *Figure 2 illustrates one part of the calculation: the effective spectrum resolved by particle number. Its plotting script and saved spectrum are included below.*
 
 ## Find a figure
