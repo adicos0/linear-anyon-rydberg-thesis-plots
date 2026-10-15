@@ -3,6 +3,8 @@
 **Figures, plotting code, and saved data from the master’s thesis by Aditya Banerjee**  
 Master in Quantum Science and Technology · Universitat de Barcelona · 2026
 
+**Read the thesis:** [University of Barcelona repository record](https://diposit.ub.edu/items/3c2114ee-4916-472a-a78a-e2c55571f981) · [permanent identifier](https://hdl.handle.net/2445/231684)
+
 This repository is a companion to the thesis *Linear Anyon Model with Rydberg Atoms*. It brings together the code located for its numerical plots, the saved data needed to replot selected results, and the graphics used in the thesis. Start with the [figure guide](#find-a-figure) if you are looking for a particular plot.
 
 ## The question behind the work
