@@ -1,37 +1,36 @@
-# Read the calculations as notebooks
+# Read the thesis calculations as notebooks
 
-Start at 01 and continue in order. Each notebook follows a numbered sequence:
-**short thesis explanation → equation → visible source-code cell → output**.
-The Hamiltonian-building, evolution, and gap-calculation code is shown inside
-the notebooks, adapted from the uploaded scripts. It is not hidden behind
-imports from the reusable model library.
+Each notebook follows **thesis explanation → thesis equation → original code →
+output**. Physics paragraphs paraphrase the cited thesis sections, with printed
+page numbers and original equation numbers. Original calculation cells have
+links to their exact archived script lines and a record of notebook adaptations.
 
-The main sections explain the calculation in small steps. The appendix keeps
-the longer symbolic derivations, dimensional checks, limiting cases, and
-comparisons with the validated reference implementation. Thesis equation
-numbers and original source filenames appear beside the relevant sections.
-
-| Notebook | Original source | Default work |
+| Notebook | Thesis source | Default calculation |
 |---|---|---|
-| [01: Effective Hamiltonian and spectrum](01_effective_hamiltonian_and_spectrum.ipynb) | `heff2_E_vs_N.py`, `heff2_E_vs_N_thesis.py` | Small sector solves; load the saved ten-site spectrum |
-| [02: Two-site populations](02_two_site_population_dynamics.ipynb) | `heff2_states.py` | Nine-state evolution; two-state and bright/dark checks |
-| [03: Chain dynamics and phase tests](03_chain_dynamics_and_phase_tests.ipynb) | `heff2_spacetime.py` | Ten sites; single-excitation and two-particle density maps |
-| [04: Effective parameters and tunnelling](04_effective_parameters_and_tunnelling.ipynb) | `amplitudes_vs_muU_thesis.py`, `mu_vs_A_over_U.py` | Finite sideband sums; parameter curves and pole handling |
-| [05: Target anyon-Hubbard gaps](05_target_anyon_hubbard_gaps.ipynb) | `sweepGapsMulti.py`, `doApplyHam.py`, `replotGapsMulti.py` | Original matrix-free operator, one four-site solve, seven saved ten-site maps |
+| [01: Effective Hamiltonian and ED](01_effective_hamiltonian_and_spectrum.ipynb) | Sections 3.6–3.7, pp. 20–22 | Original 55-state N=2 solve; archived full spectrum; source checks and plot |
+| [02: Two-site populations](02_two_site_population_dynamics.ipynb) | Section 3.8, pp. 23–25 | Original nine-state evolution and six population panels |
+| [03: Chain occupations](03_chain_dynamics_and_phase_tests.ipynb) | Section 3.8.2, pp. 25–28 | Original ten-site single-excitation and doublon dynamics; six target-phase maps |
+| [04: Parameters and tunnelling](04_effective_parameters_and_tunnelling.ipynb) | Sections 4.1–4.4, pp. 29–33 | Original sideband sums and the two uploaded parameter-plot families |
+| [05: Target-model gaps](05_target_anyon_hubbard_gaps.ipynb) | Sections 1.2–1.3 and Appendix C | Original matrix-free solver at a four-site example; seven archived ten-site gap maps |
 
-`make_active_bond_clean.py` remains a figure-processing utility. It removes small
-annotations and crops an existing schematic; it is not a Hamiltonian calculation.
-See its docstring and `reference_figures/rydberg_active_bond.pdf`. The generator of
-that original drawing and the generators of Figures 10-17 were not located in the
-source collection; these notebooks do not claim to reconstruct them.
+Notebook 01 includes a dedicated explanation of the effective Hamiltonian's
+exact diagonalization: basis configurations, number conservation, matrix
+assembly within each block, dense eigenvalue calculation, spectrum assembly,
+and the original script's checks. Its method differs from Appendix C's
+matrix-free target-model solver in Notebook 05.
+
+The earlier added derivations, independent helper-model comparisons, and
+parameter adapter have been removed from these notebooks. The numerical
+implementations now come from the original uploaded scripts. Small setup cells
+only locate files, import libraries, choose bounded execution, and display plots.
+See [SOURCE_MAP.md](SOURCE_MAP.md) and [source_provenance.json](source_provenance.json).
 
 ## ED code attribution
 
-The matrix-free exact-diagonalization code used in Notebook 05 is adapted from
-**Glen Evenbly's [Tensors.net exact-diagonalization example](https://www.tensors.net/exact-diagonalization)**.
-The original Hamiltonian-application routine is retained with attribution in
-`scripts/doApplyHam.py`; the notebook identifies the adaptations for complex
-couplings and the target anyon-Hubbard model.
+Notebook 05 retains **Glen Evenbly's
+[Tensors.net exact-diagonalization example](https://www.tensors.net/exact-diagonalization)**
+credit in `doApplyHam.py` and in the visible copied code. The effective-Hamiltonian
+dense sector solver in Notebook 01 comes from `heff2_E_vs_N.py`.
 
 ## Install and open
 
@@ -53,30 +52,24 @@ are required. `requirements-notebooks-tested.txt` records the complete validated
 environment (including platform-dependent packages); the portable input is
 `requirements-notebooks.txt`.
 
-Run each notebook top to bottom. Source arrays are never overwritten.
-`SAVE_FIGURES=False` by default; setting it to true writes to the ignored
-`notebook_outputs/` directory. Notebook 05 runs one four-site solve rather than
-launching a grid sweep. The original large scripts are preserved and should only
-be launched deliberately after reviewing their computational cost.
-
-The numbered explanation–code–output layout was guided by the user's
-[AQI notebook example](https://github.com/Charub17/global-air-pollution-aqi-ml/blob/main/Global_Air_Pollution_AQI_ML.ipynb).
-The physics text and equations come from the thesis; the numerical code comes
-from this repository's original scripts. Code-cell provenance metadata records
-the source file and the declared adaptation.
+Run each notebook top to bottom. Figures display inline. Source arrays and
+original scripts are never overwritten. Notebook 01 has `RUN_FULL_ED=False` by
+default; enabling it runs the full dense spectrum calculation and can be expensive.
+Notebook 05 performs one four-site solve and loads the saved ten-site grid.
 
 ## Verify
 
 ```bash
-python -m pytest -q
 python tools/execute_notebooks.py
 ```
 
-The execution tool validates notebook schemas, starts a separate kernel per
-notebook, fails on cell errors, and updates executed outputs. It does not run the
-large archived calculations. Pass one or more notebook filenames to execute
-only those notebooks. See the [validation record](VALIDATION.md) for the executed
-cell counts, numerical comparisons, environment, and remaining limits.
-Read [SCIENTIFIC_NOTES.md](../SCIENTIFIC_NOTES.md)
-before using the plots to make a claim about experimental times or achievable
-statistical phases.
+The execution tool uses a fresh kernel for each notebook, validates its schema,
+and stops on cell errors. [VALIDATION.md](VALIDATION.md) records this revision's
+execution and source checks. The existing `anyon_thesis` package and tests remain
+as earlier supplementary code, but are not imported by these notebooks or used
+as the source of their scientific explanations.
+
+Read [SCIENTIFIC_NOTES.md](../SCIENTIFIC_NOTES.md) for the unresolved source
+frequency convention, the diagonal compensation operation, and the chain
+script's phase/sign discrepancy. Those points are also labelled beside the
+relevant notebook cells.

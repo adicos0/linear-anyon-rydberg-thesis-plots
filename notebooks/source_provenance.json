@@ -1,0 +1,422 @@
+[
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "124fc411",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 47,
+    "line_end": 67,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "0a1904cb1e8d778497ccffa71aad54a10c711ed87a7c96e5f789509a4b5b608d"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "f40ee3f4",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 70,
+    "line_end": 104,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "3abf113593eeef319739beb34ee3a25fb142ba31bd6958c10c9595410adc7af7"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "61e56592",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 107,
+    "line_end": 109,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "be4d3f9107a116e60ee29d7a3c0a5368a938502f33b0462ae1a5c5fa070555f1"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "f395ccd8",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 115,
+    "line_end": 124,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "ab8fd0c155b85beb1097a848d16740d2554f04e05d0c59b7061db82bf405c121"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "a656c9a9",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 127,
+    "line_end": 156,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "31a542514fd9467c637e1e4fa32af5a10eb672e89725fc64d1eaaa5fc174b4a6"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "22e40797",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 162,
+    "line_end": 163,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "64cdf8214fe93ab2c172973e3b573975f0a13d6f7acf5f1e9e052a87c6a2fda4"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "46841d77",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 196,
+    "line_end": 201,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "c695576e6be88c5e014910953fa9fab0a290bf3b13f2f81499c7254401b0205e"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "f80b20b6",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 206,
+    "line_end": 236,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "925827f4c074107154e4f7180ea29f445668486a5fe233892881bad6533be176"
+  },
+  {
+    "notebook": "01_effective_hamiltonian_and_spectrum.ipynb",
+    "cell_id": "31981acb",
+    "file": "scripts/heff2_E_vs_N.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 241,
+    "line_end": 323,
+    "adaptation": "Original four-panel source plot; inline display replaces the Agg backend and file export.",
+    "original_sha256": "0696a24c10424197eab8a16b4e2fc1e10e04328020b258b029920a71aefeaa01"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "c7762105",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 28,
+    "line_end": 64,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "58be4addd8de5851c22363225ed636e985ccbb2d5194895b333f209f28ac958c"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "40c44f8a",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 69,
+    "line_end": 73,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "093da4e0f99daa549d545d799e0767b4348ef3452106022ad95829e38571ae73"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "fccb909f",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 75,
+    "line_end": 89,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "a81373d9256543603006d83cad4ea73bbc1f35a3734fb4df04808f9098905ffa"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "1058cc9e",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 92,
+    "line_end": 93,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "053e4049eb72ff1f2340b7166d4bf73de10b95b9c42d53e1429d7506b0504b29"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "5d19322a",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 98,
+    "line_end": 119,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "6d018a862763481714c784ad3814b2e61a79b88abb45a49ce8d5baf650636f62"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "343faca4",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 124,
+    "line_end": 132,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "a64958658aeaed11efff0240ef3f08bd3acfc484ebbca3c7d0b3e0bace0f20f7"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "9a2eb031",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 152,
+    "line_end": 154,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "c3b478d796415a723835261fa39e8ace6badc39bda76361b0137b829a570556a"
+  },
+  {
+    "notebook": "02_two_site_population_dynamics.ipynb",
+    "cell_id": "1bde2a9b",
+    "file": "scripts/heff2_states.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 165,
+    "line_end": 221,
+    "adaptation": "Original plot and numerical sampling; inline display replaces the image export. Time labels reproduce the source convention described above.",
+    "original_sha256": "079720dac899bd6e130e0690989a135db0b1d33be6bd30d5ba4b5210a588f46c"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "edd31f63",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 54,
+    "line_end": 78,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "788549386e1ae80c61d94044d9ad1c6f78eb10aeefc5ba6182b81e99082fda0b"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "802d0976",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 81,
+    "line_end": 116,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "8dcd6a2100f89e434c739babb338f936f182d9c7b824ad11e409bdce29efc34b"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "93c140d3",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 122,
+    "line_end": 128,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "f9b99cf4587a760f4609ca2221a6fccbb4996a3ec4f0f5de54bf7293eff8999d"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "40fc0313",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 131,
+    "line_end": 157,
+    "adaptation": "Original function body; remove the docstring whose physical-realization claim conflicts with the thesis. Mode names remain the original script names.",
+    "original_sha256": "cc12275d91c55434705ed7ec74901e7e6351193b2ab8134442d20663cd77b349"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "8df0ae68",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 160,
+    "line_end": 164,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "ea43678947d5ec927484c1d25757d5c9a554b10a744ea2966d5ae17244538288"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "5608c8f4",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 167,
+    "line_end": 192,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "dd6814479e806adc039763d76c43145eaca08a61044d394662970b506fadfdba"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "1e2624a3",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 195,
+    "line_end": 207,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "54e6ac04f52b2ca45070305d0ed30c8f2ebac75a7ca4b437c50fa0c8d8adc1f0"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "0d62f81e",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 213,
+    "line_end": 238,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "5838b191614a5af2c2ab4fa80fbfa09a51acebe7c8cd49b22bf6884c518019bd"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "ddaad103",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 325,
+    "line_end": 388,
+    "adaptation": "Original figure code; inline display replaces file export.",
+    "original_sha256": "e42b3355ed63e58d9e15e97c77e080ba2186e87602ee2be6e200f13aed6eb3b2"
+  },
+  {
+    "notebook": "03_chain_dynamics_and_phase_tests.ipynb",
+    "cell_id": "a2559b1c",
+    "file": "scripts/heff2_spacetime.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 391,
+    "line_end": 412,
+    "adaptation": "Retain original six target-phase calculations. Correct the displayed symbol to phi and omit the inconsistent drive-angle header; inline display replaces file export.",
+    "original_sha256": "e043fe5d2f4c9ee35e113f0aa96f88c10b11252d5bd01acd53c0fc2c34c22baf"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "9e836d0d",
+    "file": "scripts/amplitudes_vs_muU_thesis.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 30,
+    "line_end": 53,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "9d527ddee8720c1970b8b10a9aab67a3c69a49ce76bcbca445a7bdc4feaa6283"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "78f66c30",
+    "file": "scripts/amplitudes_vs_muU_thesis.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 56,
+    "line_end": 57,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "bcf17291a81d1eb39838b3a8d04f0b8f84fcdbca1173e75e96cc1501379cc465"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "a743b84f",
+    "file": "scripts/amplitudes_vs_muU_thesis.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 60,
+    "line_end": 63,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "cc359006358414fe98447e0d4f19d6f9fa32167aa1a89f56a4f47981c5944dff"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "1a4dbaf2",
+    "file": "scripts/amplitudes_vs_muU_thesis.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 66,
+    "line_end": 67,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "11b308be73b96e1e0d76498155ca3c35b1e0797411c7aa01e4a6bbf9b93d67e1"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "3f91a16e",
+    "file": "scripts/amplitudes_vs_muU_thesis.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 70,
+    "line_end": 105,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "1386c2480dfb7dd8236481777c39a0a85966260464ebf9a7f2ca87c1fd6d712f"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "66aca4d4",
+    "file": "scripts/amplitudes_vs_muU_thesis.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 108,
+    "line_end": 176,
+    "adaptation": "Original formula calculations, sweep ranges and plotting code; inline display replaces export.",
+    "original_sha256": "bb298a9348c90f3d01b95e6a03d4ea5dae9eae7d65d1b6e7db16d9ada29c9d3f"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "59758cea",
+    "file": "scripts/mu_vs_A_over_U.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 67,
+    "line_end": 67,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "0c6e8d77bab60b53fdc3a0ab536fce61a2ba69b726942e08baac666128ba7c05"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "cd2994a5",
+    "file": "scripts/mu_vs_A_over_U.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 84,
+    "line_end": 94,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "a7cff8a8cc42866acb6e24ea884f4f591aa083ab0fcc492efa530e294686dd90"
+  },
+  {
+    "notebook": "04_effective_parameters_and_tunnelling.ipynb",
+    "cell_id": "9f0af01e",
+    "file": "scripts/mu_vs_A_over_U.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 139,
+    "line_end": 194,
+    "adaptation": "Original formula calculations, sweep ranges and plotting code; inline display replaces export.",
+    "original_sha256": "189e9ed0276e47d16f497a17deb42e91699ee49144f8bc4163c5fde737ca2c11"
+  },
+  {
+    "notebook": "05_target_anyon_hubbard_gaps.ipynb",
+    "cell_id": "92f5595f",
+    "file": "scripts/sweepGapsMulti.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 34,
+    "line_end": 51,
+    "adaptation": "Set Nsites=4 only for the small live demonstration. The original ten-site results are loaded separately below. Other solver and operator settings are unchanged.",
+    "original_sha256": "16f311075e68a61b683b0a777f525f65b4ea3628296c34411e6058f887296415"
+  },
+  {
+    "notebook": "05_target_anyon_hubbard_gaps.ipynb",
+    "cell_id": "03df9222",
+    "file": "scripts/sweepGapsMulti.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 54,
+    "line_end": 58,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "8bea0fd194ab960e900c5849ca97976e4f3a2e237f4177623014e49b6955261d"
+  },
+  {
+    "notebook": "05_target_anyon_hubbard_gaps.ipynb",
+    "cell_id": "788d72f0",
+    "file": "scripts/doApplyHam.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 1,
+    "line_end": 43,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "d5b5d48ee1389f2b7451621fe803698a8338b99a27b8360a4ce33de3b8f9f003"
+  },
+  {
+    "notebook": "05_target_anyon_hubbard_gaps.ipynb",
+    "cell_id": "b6f6b704",
+    "file": "scripts/sweepGapsMulti.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 61,
+    "line_end": 73,
+    "adaptation": "Copied from the original script; calculation unchanged.",
+    "original_sha256": "e8d3332a76b27178698c2c118417ee1a0cad50baa7ead9beb759f4e1bf4e0310"
+  },
+  {
+    "notebook": "05_target_anyon_hubbard_gaps.ipynb",
+    "cell_id": "0a36add0",
+    "file": "scripts/replotGapsMulti.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 27,
+    "line_end": 42,
+    "adaptation": "Inline display replaces file export. Nearest-cell shading shows the computed grid without interpolating it. Use L for site count to distinguish it from particle number; gap values are unchanged.",
+    "original_sha256": "509b0b457a7955a0eb67dabc447eb92023769aab0af5a145b16321caa864e4bf"
+  },
+  {
+    "notebook": "05_target_anyon_hubbard_gaps.ipynb",
+    "cell_id": "11fbdd76",
+    "file": "scripts/replotGapsMulti.py",
+    "commit": "22959963191fcbc4d283ec4b272b506ad6dd979b",
+    "line_start": 45,
+    "line_end": 71,
+    "adaptation": "Preserve the original loading and gap-difference calculations; disable pickle and omit directory creation because figures are displayed inline.",
+    "original_sha256": "78929f11de65ceb63ad98a0913934f1f5f9870191f149b215aa8b3cd2f09f055"
+  }
+]

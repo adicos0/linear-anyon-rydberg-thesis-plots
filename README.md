@@ -7,29 +7,31 @@ Master in Quantum Science and Technology · Universitat de Barcelona · 2026
 
 ## Learn the theory and run the calculations
 
-Five [explanatory Jupyter notebooks](notebooks/README.md) follow a simple numbered
-sequence: thesis explanation, equation, source-code cell, and output. Each
-calculation is visible in the notebook, with detailed derivations and checks
-in an appendix:
+Five [Jupyter notebooks](notebooks/README.md) pair short explanations from the
+thesis with its numbered equations, the original uploaded calculation code,
+and executed output. Each source-code cell links to its original script lines.
 
-1. [Effective Hamiltonian and spectrum](notebooks/01_effective_hamiltonian_and_spectrum.ipynb)
+1. [Effective Hamiltonian and exact diagonalization](notebooks/01_effective_hamiltonian_and_spectrum.ipynb)
 2. [Two-site population dynamics](notebooks/02_two_site_population_dynamics.ipynb)
-3. [Chain dynamics and phase tests](notebooks/03_chain_dynamics_and_phase_tests.ipynb)
+3. [Chain occupation dynamics](notebooks/03_chain_dynamics_and_phase_tests.ipynb)
 4. [Effective parameters and tunnelling](notebooks/04_effective_parameters_and_tunnelling.ipynb)
 5. [Target anyon-Hubbard model and gaps](notebooks/05_target_anyon_hubbard_gaps.ipynb)
 
-The notebooks load saved thesis data for the expensive results and run small
-demonstrations by default. Their numerical cells are adapted from the original
-uploaded scripts. The reusable reference functions in
-[`anyon_thesis/models.py`](anyon_thesis/models.py) provide independent comparisons;
-the original scripts and data remain unchanged. See the
-[installation and execution guide](notebooks/README.md).
+Notebook 01 explains the particle-number basis, dense sector matrices, full
+spectrum assembly, and original consistency checks for the effective Hamiltonian.
+Notebook 05 separately explains the matrix-free solver for the target model.
+The notebooks load archived data for the large calculations and use bounded
+live examples. They do not use the assistant-created `anyon_thesis` helper package.
 
-**Interpretation notes:** the original files contain an unresolved ordinary-
-versus-angular-frequency convention and conflicting claims about phase
-reachability. The notebooks use dimensionless time and label assigned phase
-patterns explicitly. Read [SCIENTIFIC_NOTES.md](SCIENTIFIC_NOTES.md) before
-interpreting the calculated dynamics as a physical drive or a calibrated time.
+See the [installation guide](notebooks/README.md),
+[thesis-to-code source map](notebooks/SOURCE_MAP.md), and
+[validation record](notebooks/VALIDATION.md).
+
+**Source discrepancies:** frequency/time conventions, diagonal compensation,
+and the phase/sign wording of the chain script are explicitly identified in
+[SCIENTIFIC_NOTES.md](SCIENTIFIC_NOTES.md). The notebooks retain the original
+calculations and distinguish the thesis's physical restrictions from the source
+script's comments. No new physical interpretation is supplied to resolve them.
 
 This repository is a companion to the thesis *Linear Anyon Model with Rydberg Atoms*. It brings together the code located for its numerical plots, the saved data needed to replot selected results, and the graphics used in the thesis. Start with the [figure guide](#find-a-figure) if you are looking for a particular plot.
 
