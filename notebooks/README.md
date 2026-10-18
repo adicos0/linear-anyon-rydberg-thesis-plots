@@ -1,17 +1,23 @@
 # Read the calculations as notebooks
 
-Start at 01 and continue in order. Every notebook includes assumptions,
-symbol definitions, symbolic algebra, dimensional checks, numerical cells,
-limiting cases, and interpretation limits. The notebooks are executable teaching
-companions to the archived source, and show their executed outputs on GitHub.
+Start at 01 and continue in order. Each notebook follows a numbered sequence:
+**short thesis explanation → equation → visible source-code cell → output**.
+The Hamiltonian-building, evolution, and gap-calculation code is shown inside
+the notebooks, adapted from the uploaded scripts. It is not hidden behind
+imports from the reusable model library.
+
+The main sections explain the calculation in small steps. The appendix keeps
+the longer symbolic derivations, dimensional checks, limiting cases, and
+comparisons with the validated reference implementation. Thesis equation
+numbers and original source filenames appear beside the relevant sections.
 
 | Notebook | Original source | Default work |
 |---|---|---|
 | [01: Effective Hamiltonian and spectrum](01_effective_hamiltonian_and_spectrum.ipynb) | `heff2_E_vs_N.py`, `heff2_E_vs_N_thesis.py` | Small sector solves; load the saved ten-site spectrum |
 | [02: Two-site populations](02_two_site_population_dynamics.ipynb) | `heff2_states.py` | Nine-state evolution; two-state and bright/dark checks |
-| [03: Chain dynamics and phase tests](03_chain_dynamics_and_phase_tests.ipynb) | `heff2_spacetime.py` | Eight sites at total occupation two; assumed phase patterns |
+| [03: Chain dynamics and phase tests](03_chain_dynamics_and_phase_tests.ipynb) | `heff2_spacetime.py` | Ten sites; single-excitation and two-particle density maps |
 | [04: Effective parameters and tunnelling](04_effective_parameters_and_tunnelling.ipynb) | `amplitudes_vs_muU_thesis.py`, `mu_vs_A_over_U.py` | Finite sideband sums; parameter curves and pole handling |
-| [05: Target anyon-Hubbard gaps](05_target_anyon_hubbard_gaps.ipynb) | `sweepGapsMulti.py`, `doApplyHam.py`, `replotGapsMulti.py` | Saved ten-site maps and an optional small four-site sweep |
+| [05: Target anyon-Hubbard gaps](05_target_anyon_hubbard_gaps.ipynb) | `sweepGapsMulti.py`, `doApplyHam.py`, `replotGapsMulti.py` | Original matrix-free operator, one four-site solve, seven saved ten-site maps |
 
 `make_active_bond_clean.py` remains a figure-processing utility. It removes small
 annotations and crops an existing schematic; it is not a Hamiltonian calculation.
@@ -41,9 +47,15 @@ environment (including platform-dependent packages); the portable input is
 
 Run each notebook top to bottom. Source arrays are never overwritten.
 `SAVE_FIGURES=False` by default; setting it to true writes to the ignored
-`notebook_outputs/` directory. Notebook 05's small sweep can be skipped by setting
-`RUN_DEMO_SWEEP=False`. The original large scripts are preserved and should only
+`notebook_outputs/` directory. Notebook 05 runs one four-site solve rather than
+launching a grid sweep. The original large scripts are preserved and should only
 be launched deliberately after reviewing their computational cost.
+
+The numbered explanation–code–output layout was guided by the user's
+[AQI notebook example](https://github.com/Charub17/global-air-pollution-aqi-ml/blob/main/Global_Air_Pollution_AQI_ML.ipynb).
+The physics text and equations come from the thesis; the numerical code comes
+from this repository's original scripts. Code-cell provenance metadata records
+the source file and the declared adaptation.
 
 ## Verify
 

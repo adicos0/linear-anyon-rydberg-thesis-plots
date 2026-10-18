@@ -4,6 +4,15 @@ The notebooks explain numerical models and source results. They do not add
 experimental evidence or replace the thesis's physical derivation. The original
 scripts, data, reference graphics and source manifest are preserved byte for byte.
 
+The readable revision follows numbered sections with a short thesis description,
+the relevant equation, a source-derived code cell, and its output. Core calculations
+are visible in the notebook. The reusable `anyon_thesis` functions are imported
+only in the final verification appendix, where they independently check the
+visible source calculations. Code-cell metadata identifies the archived source
+file, source commit, and notebook-specific adaptation. Longer symbolic derivations
+remain available in the appendix. The notebook explanations adapt the thesis;
+additional mathematical commentary is not presented as a quotation from it.
+
 ## Source record
 
 - Aditya Banerjee, *Linear Anyon Model with Rydberg Atoms*, Universitat de
