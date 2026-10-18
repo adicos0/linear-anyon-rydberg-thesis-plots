@@ -25,6 +25,14 @@ See its docstring and `reference_figures/rydberg_active_bond.pdf`. The generator
 that original drawing and the generators of Figures 10-17 were not located in the
 source collection; these notebooks do not claim to reconstruct them.
 
+## ED code attribution
+
+The matrix-free exact-diagonalization code used in Notebook 05 is adapted from
+**Glen Evenbly's [Tensors.net exact-diagonalization example](https://www.tensors.net/exact-diagonalization)**.
+The original Hamiltonian-application routine is retained with attribution in
+`scripts/doApplyHam.py`; the notebook identifies the adaptations for complex
+couplings and the target anyon-Hubbard model.
+
 ## Install and open
 
 From the repository root, with Python 3.11 or newer:

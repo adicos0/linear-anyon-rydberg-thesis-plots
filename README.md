@@ -79,6 +79,21 @@ python -c "import sys; sys.path.insert(0, 'scripts'); from replotGapsMulti impor
 
 The commands write new images to `figures/`; the archived images remain in `reference_figures/`. Other scripts retain their original relative output paths, so check the script before running it. Recomputing the Figure 2 spectrum or the Figures 8–9 energy grid can take substantial time and memory. The Figures 4–5 script also performs a large matrix calculation.
 
+## Code attribution
+
+The matrix-free exact-diagonalization (ED) code used for the target anyon-Hubbard
+gap calculations is adapted from **Glen Evenbly's
+[exact-diagonalization example on Tensors.net](https://www.tensors.net/exact-diagonalization)**.
+In particular, [`doApplyHam.py`](scripts/doApplyHam.py) derives from the routine
+that applies a sum of local Hamiltonian terms to a state without constructing
+the full Hamiltonian matrix. Its original attribution is retained in the script
+and in [Notebook 05](notebooks/05_target_anyon_hubbard_gaps.ipynb).
+
+The implementation here includes adaptations for complex Hermitian couplings
+and density-dependent hopping in the truncated anyon-Hubbard model. The
+thesis-specific Hamiltonians, parameters, and sweeps are documented in the
+scripts and notebooks.
+
 ## What was checked
 
 - All copied Python files passed syntax parsing.
