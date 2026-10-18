@@ -7,8 +7,10 @@ Master in Quantum Science and Technology · Universitat de Barcelona · 2026
 
 ## Learn the theory and run the calculations
 
-Five [explanatory Jupyter notebooks](notebooks/README.md) pair the equations with
-executable Python, dimensional checks, limiting cases, and numerical validation:
+Five [explanatory Jupyter notebooks](notebooks/README.md) follow a simple numbered
+sequence: thesis explanation, equation, source-code cell, and output. Each
+calculation is visible in the notebook, with detailed derivations and checks
+in an appendix:
 
 1. [Effective Hamiltonian and spectrum](notebooks/01_effective_hamiltonian_and_spectrum.ipynb)
 2. [Two-site population dynamics](notebooks/02_two_site_population_dynamics.ipynb)
@@ -17,9 +19,11 @@ executable Python, dimensional checks, limiting cases, and numerical validation:
 5. [Target anyon-Hubbard model and gaps](notebooks/05_target_anyon_hubbard_gaps.ipynb)
 
 The notebooks load saved thesis data for the expensive results and run small
-demonstrations by default. Their reusable numerical functions live in
-[`anyon_thesis/models.py`](anyon_thesis/models.py); the original scripts and data
-remain unchanged. See the [installation and execution guide](notebooks/README.md).
+demonstrations by default. Their numerical cells are adapted from the original
+uploaded scripts. The reusable reference functions in
+[`anyon_thesis/models.py`](anyon_thesis/models.py) provide independent comparisons;
+the original scripts and data remain unchanged. See the
+[installation and execution guide](notebooks/README.md).
 
 **Interpretation notes:** the original files contain an unresolved ordinary-
 versus-angular-frequency convention and conflicting claims about phase
