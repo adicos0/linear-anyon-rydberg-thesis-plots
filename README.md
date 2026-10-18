@@ -5,6 +5,28 @@ Master in Quantum Science and Technology · Universitat de Barcelona · 2026
 
 **Read the thesis:** [University of Barcelona repository record](https://diposit.ub.edu/items/3c2114ee-4916-472a-a78a-e2c55571f981) · [permanent identifier](https://hdl.handle.net/2445/231684)
 
+## Learn the theory and run the calculations
+
+Five [explanatory Jupyter notebooks](notebooks/README.md) pair the equations with
+executable Python, dimensional checks, limiting cases, and numerical validation:
+
+1. [Effective Hamiltonian and spectrum](notebooks/01_effective_hamiltonian_and_spectrum.ipynb)
+2. [Two-site population dynamics](notebooks/02_two_site_population_dynamics.ipynb)
+3. [Chain dynamics and phase tests](notebooks/03_chain_dynamics_and_phase_tests.ipynb)
+4. [Effective parameters and tunnelling](notebooks/04_effective_parameters_and_tunnelling.ipynb)
+5. [Target anyon-Hubbard model and gaps](notebooks/05_target_anyon_hubbard_gaps.ipynb)
+
+The notebooks load saved thesis data for the expensive results and run small
+demonstrations by default. Their reusable numerical functions live in
+[`anyon_thesis/models.py`](anyon_thesis/models.py); the original scripts and data
+remain unchanged. See the [installation and execution guide](notebooks/README.md).
+
+**Interpretation notes:** the original files contain an unresolved ordinary-
+versus-angular-frequency convention and conflicting claims about phase
+reachability. The notebooks use dimensionless time and label assigned phase
+patterns explicitly. Read [SCIENTIFIC_NOTES.md](SCIENTIFIC_NOTES.md) before
+interpreting the calculated dynamics as a physical drive or a calibrated time.
+
 This repository is a companion to the thesis *Linear Anyon Model with Rydberg Atoms*. It brings together the code located for its numerical plots, the saved data needed to replot selected results, and the graphics used in the thesis. Start with the [figure guide](#find-a-figure) if you are looking for a particular plot.
 
 ## The question behind the work
